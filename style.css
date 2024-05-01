@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:wght@600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: blanchedalmond;
+  background-image: url(img/marketingbk.jpg);
+  /* Imagen descargada de Unsplash. Creada por Campaing Creators */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 3em;
+  margin: 10px 0;
+  color: white;
+}
+p {
+  font-family: 'Lora', serif;
+  margin: 10px 0;
+  color: white;
+}
+.body-index .bienvenida {
+  background: rgba(255, 255, 254, 0.797);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.body-index .bienvenida h2 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  margin: 10px 0;
+  color: rgba(145, 130, 64);
+}
+.body-index .bienvenida h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: black;
+}
+.body-index .bienvenida p {
+  font-family: 'Lora', serif;
+  margin: 10px 0;
+  color: grey;
+}
+.body-index article {
+  background: rgba(145, 130, 64, 0.797);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.body-index .articulos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.body-index .articulos article {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(145, 130, 64, 0.797);
+}
+.body-index .articulos article img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.body-index .articulos article h2 {
+  margin: 10px 0;
+  font-family: 'Lora', serif;
+}
+.body-index .articulos article p {
+  margin: 10px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+aside {
+  background: rgba(145, 130, 64, 0.797);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+aside h2 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  margin: 10px 0;
+  color: white;
+}
+aside ul {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+header .logo {
+  font-size: 1.5em;
+  color: white;
+  background: none;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+header .navbar {
+  list-style: none;
+  display: flex;
+}
+
+header .navbar li {
+  padding: 0 20px;
+}
+
+header .navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+header .navbar li ul>li {
+  display: none;
+}
+
+header .navbar li:hover ul>li {
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  width: 50px;
+}
+header .navbar li a:hover {
+  color: orange;
+  border-bottom: 3px solid orange;
+  display: block;
+}
+
+
+section {
+  padding: 100px 50px;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contenido .tituloBox h1, .contenido .tituloBox p {
+  margin-bottom: 20px;
+}
+
+button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: darkmagenta;
+}
+/* css de servicios.html */
+.body-servicios .tituloBox {
+  background: rgba(145, 130, 64, 0.797);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.body-servicios .tituloBox h1 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  margin: 10px 0;
+  color: white;
+}
+.body-servicios .tituloBox p {
+  font-family: 'Lora', serif;
+  margin: 10px 0;
+  color: white;
+}
+.body-servicios .tituloBox ul {
+  list-style: none;
+}
+.body-servicios .tituloBox li {
+  text-align: center;
+  width: auto;
+  margin: 20px;
+  padding: 20px;
+}
+.body-quienes .contenido{
+  background: rgba(145, 130, 64, 0.797);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.body-quienes .contenido h1 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  margin: 10px 0;
+  color: white;
+}
+.body-quienes .equipo {
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 50px;
+}
+.body-quienes .equipo h2 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.body-quienes .equipo .persona {
+  padding: 20px;
+  margin: 20px;
+}
+.body-quienes .equipo .persona img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.body-quienes .equipo .persona h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  padding: 10px;
+  color: grey
+}
+.body-quienes .equipo .persona p, button {
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+.contacto {
+  background: rgba(145, 130, 64, 0.797);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.contacto h1 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  margin: 10px 0;
+  color: white;
+}
+.contacto p {
+  font-family: 'Lora', serif;
+  margin: 10px 0;
+  color: white;
+}
+.contacto form {
+  margin-top: -10px;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px grey;
+}
+.contacto form input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}
+footer .redessociales a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .redessociales a:hover {
+  color: orange;
+}
+
+/* Parte responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .navbar {
+        flex-direction: column;
+    }
+
+    header .navbar li {
+        padding: 10px 0;
+    }
+    section {
+      margin-top: 30%;
+    }
+    .contacto {
+      margin-top: 40%;
+    }
+    footer {
+      display: none;
+    }
+}
+@media (max-width: 576px) {
+  header {
+    font-size: 1.2em;
+    margin-bottom: 00px;
+  }
+  .tituloBox {
+    display: none;
+  }
+  .body-servicios .tituloBox {
+    display: block;
+  }
+  .body-index .bienvenida {
+    top: 180%;
+  }
+  .body-index article {
+      width: 80%;
+  }
+  .contacto {
+    margin-top: 300px;
+  }
+  .equipo {
+    margin-top: 150px;
+  }
+}
+

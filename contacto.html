@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto - MadridMarkt</title>
+</head>
+<body class="body-contacto">
+    <header>
+      <a href="index.html" class="logo">MadridMarkt</a>
+      <ul class="navbar">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a>
+            <ul>
+              <li><a href="consultoria.html">Consultoría</a></li>
+              <li><a href="redes_sociales.html">Redes Sociales</a></li>
+              <li><a href="redaccion.html">Redacción de artículos</a></li>
+          </ul>
+          </li>
+          <li><a href="quienes.html">Quiénes somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </header>
+    <section class="contacto">
+        <h1>Contacto</h1>
+        <p>Puedes contactarnos aquí:</p>
+        <form action="mailto:hola@madridmarkt.com" method="POST" enctype="text/plain">
+          Nombre:<input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br>
+          Empresa:<input type="text" id="empresa" name="empresa" placeholder="Empresa"><br>
+          Email:<input type="email" id="email" name="email" required placeholder="abcd@mail.com"><br>
+          Teléfono:<input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono"><br>
+          Interés en:<select id="servicio" name="servicio">
+              <option value="consultoria">Consultoría</option>
+              <option value="redes_sociales">Redes Sociales</option>
+              <option value="redaccion">Redacción de artículos</option>
+          </select><br>
+          <br>
+          Presupuesto:<input type="text" id="presupuesto" name="presupuesto" placeholder="Presupuesto estimado"><br>
+          Fecha de inicio:<input type="date" id="fecha_inicio" name="fecha_inicio"><br>
+          Mensaje:<textarea id="mensaje" name="mensaje" rows="4" required placeholder="Comentarios aquí..."></textarea><br>
+          <button type="submit">Enviar Mensaje</button>
+          <button type="reset">Borrar</button>
+      </form>
+    </section>
+    <footer>
+      <p>@MadridMarkt - Agencia de Marketing Digital</p>
+      <div class="redessociales">
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">Linkedin</a>
+      <ul class="redesSociales">
+          <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+      </ul>
+      </div>
+  </footer>
+</body>
+</html>
